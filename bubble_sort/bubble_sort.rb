@@ -7,10 +7,10 @@ def bubble_sort(bubbles = Array.new(1,0))
             #p "Is array[" + x.to_s + "]:" + bubbles[ x ].to_s + " greater than array[" + (x + 1).to_s + "]:" + bubbles[ x + 1 ].to_s + "?"
             #p (bubbles[ x ] > bubbles[ x + 1 ])
             if (bubbles[ x ] > bubbles[ x + 1 ])
+                #swap'em
                 holder = bubbles[x]
                 bubbles[x] = bubbles[x+1]
                 bubbles[x+1] = holder
-                #swap'em
             end
             #p bubbles
         end
